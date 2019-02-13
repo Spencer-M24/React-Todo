@@ -5,7 +5,7 @@ import TodoForm from './components/TodoComponents/TodoForm'
 
 class App extends React.Component {
 
-  constructor() {
+  constructor(props) {
   super();
   this.state ={
     currentList: [
@@ -32,14 +32,14 @@ class App extends React.Component {
 
   handleChange = e => {
     this.setState({
-      [e.target.name]: e.target.inputValue
+      [e.target.name]: e.target.value
 
   });
 
 }
 
 
-addItems = e => {
+addItem = e => {
   e.preventDefault();
   this.setState({
   currentList: [...this.state.currentList, {task: this.state.inputValue, id:
@@ -61,7 +61,7 @@ markComplete = item => {
   })
 }
 
-removeComplete = () => {
+removeCompleted = () => {
   this.setState({
     currentList: this.state.currentList.filter(i => i.completed === false)
   })

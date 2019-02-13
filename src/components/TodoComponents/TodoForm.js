@@ -25,4 +25,4 @@ onChange={props.handleChange} />
     )
 }
 
-export default TodoForm
+export default TodoForm;
