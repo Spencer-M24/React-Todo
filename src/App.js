@@ -66,7 +66,7 @@ removeComplete = () => {
 }
 render () {
 return (
-  React.Fragment
+  <React.Fragment >
   <h2>Welcome to your Todo App!</h2>
 
   <TodoList
@@ -79,7 +79,7 @@ return (
   inputValue={this.state.inputValue}
   addItem={this.addItem}
   removeCompleted={this.removeCompleted} />
-  React.Fragment
+  </React.Fragment >
 );
 }
 }
