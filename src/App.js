@@ -8,13 +8,15 @@ class App extends React.Component {
   constructor() {
   super();
   this.state ={
-    todos: [
+    currentList: [
       {
       task: 'Organize Garage',
       id: 1528817077286,
-      completed: false
-
+      completed: false,
+      class: ''
       },
+
+      
 
     {
       task:'Bake Cookies',
@@ -83,20 +85,6 @@ return (
 );
 }
 }
-
-
-
-
-
-
-
-
-  
-
-      
-
-
-
 
 
 export default App;
