@@ -53,7 +53,7 @@ addItems = e => {
 
 markComplete = item => {
   this.setState({
-    currentList: this.state.currentList.map(i => { return iindex.id === item.id ? (iindex.completed === true ? { ...i, completed: false, class: '' } : { ...i, completed: true, class: 'complete' }) : idex
+    currentList: this.state.currentList.map(i => { return i.id === item.id ? (i.completed === true ? { ...i, completed: false, class: '' } : { ...i, completed: true, class: 'complete' }) : i
 
     })
   })
@@ -61,7 +61,7 @@ markComplete = item => {
 
 removeComplete = () => {
   this.setState({
-    currentList: this.state.currentList.filter(i => iindex.completed === false)
+    currentList: this.state.currentList.filter(i => i.completed === false)
   })
 }
 render () {
